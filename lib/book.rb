@@ -15,7 +15,7 @@ class Book
   def genre=(genre)
     @genre = genre
     GENRES.each do |brand|
-      if brand == genre
+      if genre == genre
       GENRES << genre 
   end
   
