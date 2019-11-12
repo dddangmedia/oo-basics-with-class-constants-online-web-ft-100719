@@ -18,6 +18,7 @@ class Book
       if genre !== brand
         GENRES << genre 
       end
+    end
   end
   
 end
