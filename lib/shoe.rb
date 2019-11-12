@@ -7,9 +7,14 @@ class Shoe
   def initialize(brand)
     @brand = brand
     
-    if !(BRANDS.include?(@brand))
-      BRANDS << @brand
+    BRANDS.each do |bra|
+      if bra != @brand
+        BRANDS << @brand 
+      end
     end
+#    if !(BRANDS.include?(@brand))
+#      BRANDS << @brand
+#    end
   end
 
   def cobble
